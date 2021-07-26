@@ -13,6 +13,9 @@ class Comercio(models.Model):
     api_key = models.UUIDField(default=_uuid.uuid4, editable=False)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
 
+    def is_authenticated(self):
+        return True
+
 
 class Empleado(models.Model):
     id = models.BigAutoField(primary_key=True)

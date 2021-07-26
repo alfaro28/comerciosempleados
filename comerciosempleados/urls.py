@@ -19,6 +19,6 @@ from django.urls import path, include
 admin.site.site_header = 'Comercios Empleados'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('', include('comerciosempleados.main.urls', namespace="main")),
 ]
